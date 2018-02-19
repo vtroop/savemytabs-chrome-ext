@@ -112,7 +112,7 @@ Tabs.copyToClipboard = function(e){
 	}
 
 	var links_text = links.map(function(link){
-		return link.href + '\n';
+		return link.href + '|'+link.title+'\n';
 	}).join('');
 	
 	var textarea = document.createElement('textarea');
